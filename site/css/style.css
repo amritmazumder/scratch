@@ -1,0 +1,379 @@
+/* Global Styles */
+
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #FCCD16;
+	}
+
+/* The Yellow: #FCCD16 */
+
+	* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+	behavior: url(../htc/boxsizing.htc);
+	}
+
+	*::-webkit-scrollbar { width: 0 !important }
+
+	input:hover {
+		cursor: pointer;
+	}
+
+/* Layout Styles */
+
+	/* left menu */
+	.val-menu {    
+		width: 5%;
+		min-height: 510px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	/* top menu */
+	.con-menu {
+		width: 100%;
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 4;
+	}
+
+	/* right menu */
+	.per-menu {
+		width: 5%;
+
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: none;
+		z-index: 2;
+	}
+
+	/* div behind fixed divs */
+	.surface {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	/* Isotope */
+	.container {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 3%;
+	}
+
+/* Top Menu Status and control */
+	
+	.con-menu .val-drawer {
+		float: left;
+		width: 5%;
+		height: 20px;
+		background: none;
+	}
+
+	.con-menu .context {
+		float: left;
+		width: 90%;
+		height: auto;
+		background-color: none;
+		padding: 15px 0px 10px 10px;
+	}
+
+	.con-menu .media-btn-group {
+		width: 30%;
+		float: left;
+		height: 10px;
+		background-color: none;
+	}
+
+	.con-menu .val-drawer {
+		float: left;
+		width: 5%;
+		height: 20px;
+		background: none;
+	}
+
+/* Left Menu Controls */
+
+	.val-menu .spacer {
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+
+	.val-menu .btn-group {
+		width: 100%;
+		float: left;
+	}
+
+	.btn-group .val-btn {
+		float: left;
+		width: 100%;
+	}
+	.val-btn {
+		background-color: none;
+		position: relative;
+	}
+
+	.val-btn input {
+		-webkit-appearance: none;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		outline: none;
+	}
+
+	.val-btn img {
+		width: 40%;
+		height: auto;
+		min-width: 25px;
+		position: absolute;
+		-webkit-transition: .1s ease-out;
+	}
+
+/* Right Menu Controls */
+
+.per-menu .spacer {
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+
+	.per-menu .per-btn-group {
+		width: 100%;
+		float: left;
+	}
+
+	.per-btn-group .per-btn {
+		float: left;
+		width: 100%;
+	}
+	.per-btn {
+		position: relative;
+
+	}
+
+	.per-btn input {
+		-webkit-appearance: none;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		outline: none;
+	}
+
+	.per-btn img {
+		width: 40%;
+		height: auto;
+		min-width: 25px;
+		position: absolute;
+		-webkit-transition: .1s ease-out;
+	}
+
+/* Item Styles */
+	
+	.item {
+		width: 24%;
+		height: auto;
+		float: left;
+		margin: 10px 10px 0px 0px;
+	}
+
+	.item .item-content {
+		width: 100%;
+		height: auto;
+		border-radius: 4px;
+		border: 1px solid black;
+		background-color: black;
+	}	
+
+	.item-content .val-category {
+		width: 100%;
+		height: 35px;
+		background-color: #FCCD16;
+		padding: 10px 0px 5px 10px;
+		float: left;
+		position: relative;
+		border-radius: 3px 3px 0px 0px;
+	}
+
+		.val-category div {
+			float: left;
+		}
+
+		.val-category .val-icon {
+			width: 7%;
+			max-width: 30px;
+			height: auto;
+			margin-right: 10px;
+		}
+
+		.val-category .val-icon img {
+			width: 100%;
+		}
+
+		.val-category .val-label {
+			font-family: "franklin-gothic-urw",sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 9pt;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-top: 3px;
+		}
+
+	.item-content .val-content {
+		width: 100%;
+		height: auto;
+		padding: 20px 10px 15px 10px;
+		float: left;
+		background-color: #FCCD16;
+
+	}
+
+	.quote {
+		font-family: "ff-meta-serif-web-pro", 'ChaparralPro-Regular', serif;
+		font-size: 17pt;
+		line-height: 26pt;
+	}
+
+	.item-content .val-src {
+		float: left;
+		width: 100%;
+		height: auto;
+		background-color: none;
+		padding: 10px 5px 5px 10px;
+		border-top: 1px solid black;
+		position: relative;
+		background-color: black;
+	}
+
+	.item-content .val-src .content-type {
+			font-family: "franklin-gothic-urw",sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 8pt;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			pointer-events: none;
+			padding: 10px 10px 5px 5px;
+			position: absolute;
+			top: 0;
+			right: 0;
+	}
+
+	.source {
+		font-family: "franklin-gothic-urw-cond",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 10pt;
+		color: #FCCD16;
+	}
+
+	.item-content .val-author {
+		background-color: black;
+		width: 100%;
+		height: 40px;
+		float: left;
+	}
+
+	.item-content .val-author .val-avatar {
+		width: 12%;
+		max-width:30px;
+		height: auto;
+		background-color: none;
+		float: left;
+		margin: 5px 0px 0px 10px;
+	}
+
+	.item-content .val-author .val-avatar img {
+		width: 100%;
+	}
+
+	.item-content .val-author .val-name {
+		float: left;
+		margin: 12px 0px 0px 10px;
+	}
+
+	.person {
+		font-family: "franklin-gothic-urw",sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12pt;
+		color: #FCCD16;
+	}
+
+	.hack {
+		font-size: 4px;
+		opacity: 0;
+		background-color: black;
+		pointer-events:none;
+	}
+
+	.ui-voice {
+		font-family: "franklin-gothic-urw-cond",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11pt;
+	}
+
+		.header {
+		font-family: "franklin-gothic-urw",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 11pt;
+	}
+
+	.not-clicked {
+		opacity: 0.2;
+	}
+
+	.clicked {
+		opacity: 1;
+	}
+
+
+	.tooltipsy {
+		font-family: "franklin-gothic-urw",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 10pt;
+		color: black;
+		background-color: white;
+		padding: 10px 10px 10px 10px; 
+		margin-left: -10px;
+	}
+
+
+	a {
+		color: #FCCD16;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	.val-src a {
+		width: 60%;
+		display: block;
+		background-color: none;
+	}
+
+	.val-src a:hover {
+		text-decoration: underline;
+	}
+
+	iframe {
+		width: 100%;
+
+	}

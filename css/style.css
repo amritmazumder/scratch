@@ -1,0 +1,133 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #373737;
+}
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+.container {
+	width: 50%;
+	height: 1000px;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.2);
+}
+
+.control {
+	width: 50%;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.control-filter {
+	width: 50%;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+.item {
+	width: 130px;
+	height: auto;
+	background: rgba(255,255,255);
+	margin: 2px;
+	
+}
+
+.height {
+	width: 100%;
+	height: auto;
+	border: 2px solid white;
+	color: white;
+}
+
+.weight {
+	width: 100%;
+	height: auto;
+	border: 2px solid black;
+}
+
+.name {
+	width: 100%;
+	height: auto;
+	border: 2px solid #ff5656;
+	color: #ff5656;
+}
+
+.label {
+	font-family: helvetica;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+
+.btn-sort {
+	width: auto;
+	padding: 10px;
+	background-color: white;
+	float: left;
+	margin-right: 10px;
+}
+
+.btn-filter {
+	width: auto;
+	padding: 10px;
+	background-color: #ff5656;
+	float: left;
+	margin-right: 10px;
+	color: white
+}
+
+.token {
+	float: left;
+	margin-right: 10px;
+	display: block;
+	position: relative;
+	background-color: none;
+	width: 120px;
+	height: 50px;
+}
+
+input[type=checkbox] {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0);
+	 -webkit-appearance: none;
+	 z-index: 1;
+	 -webkit-transition: .2s ease-out;
+}
+
+input[type=checkbox]:active {
+	background-color: yellow;
+}
+
+input[type=checkbox]:hover {
+	background-color: rgba(255,255,255,0.5);
+	cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+	background-color: rgba(255,255,255,1);
+}
+
+.tag {
+	color: white;
+	background-color: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 10px 0px 0px 10px;
+	text-align: left;
+
+}
+
